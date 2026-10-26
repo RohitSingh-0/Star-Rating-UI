@@ -1,0 +1,149 @@
+body {
+    background-color: #141519; /* Set a black background for the entire page */
+    color: #ffffff;/* Set text color to white for better contrast */
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+#container {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 25px;
+    height: 400px;
+    max-width: 400px;
+    width: 100%;
+    background-color: #1f2630;/* Dark gray background */
+    box-sizing: border-box;
+    margin:auto
+}
+
+
+@media (max-width: 600px) {
+    #container {
+        width: 95%; /* Adjust width for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px; /* Add padding for better spacing */
+    }
+}
+@media (min-width: 350px) and (max-width: 500px) {
+    #thank-you {
+        width: 95%; /* Adjust width for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px; /* Add padding for better spacing */
+    }
+}
+
+.margin {
+    margin: 20px;
+}
+
+#star-icon {
+    display: flex;
+    height: 50px;
+   max-width: 50px;
+   width:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#star-image {
+    border-radius: 50%;/* Makes the image circular */
+    padding: 12px;
+    background-color: #2c3340;/* Slightly lighter gray for the image background */
+}
+
+#feedback-text {
+    font-size: 16px;
+    margin-top: 25px;
+    color: #b0b3b8;/* Lighter gray for the feedback text */
+}
+
+.rating {
+    height: 50px;
+    max-width: 50px;
+    width:100%;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background-color: #2c3340;/* Dark gray background for the rating button */
+    color: #b0b3b8;
+    cursor: pointer;
+}
+
+.rating:hover {
+    background-color: whitesmoke;/* Lighter gray on hover */
+    color: black;/* Change text color to black for better contrast */
+}
+
+.rating.selected {
+    background-color: hsl(25, 97%, 53%);/* Even lighter gray when clicked */
+    color: black;/* Change text color to black for better contrast */
+}
+
+#ratingbuttons {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+#submit-button {
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    margin-top: 25px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: white;
+}
+
+.font_weight {
+    font-weight: 600;/* Makes the text normal */
+}
+
+#thank-you {
+    text-align: center;
+
+    color: white;
+    display: none;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 25px;
+    height: 400px;
+    max-width: 400px;
+    width:100%;
+    background-color: #1f2630
+}
+
+.thank-image {
+    max-width: 200px;
+    width:100%;
+    margin-bottom: 15px;
+}
+
+.selected-text {
+    background-color: #262f38;
+    color: orange;
+    /* padding: 8px 16px; */
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.note {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.5;
+}
